@@ -9,7 +9,8 @@
   },
   "scripts": {
     "test": "node_modules/jest/bin/jest.js --runInBand",
-    "build:docs": "node_modules/.bin/jsdoc2md -f 'lib/*.js' -c jsdoc.json > docs.md"
+    "build:docs": "node_modules/.bin/jsdoc2md -f 'lib/*.js' -c jsdoc.json > docs.md",
+    "build:sf": "GOOS=js GOARCH=wasm go build -o sf.wasm ."
   },
   "repository": {
     "type": "git",
